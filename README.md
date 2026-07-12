@@ -21,11 +21,18 @@ Chains, the payments contract, and order helpers — powered by [viem](https://v
 
 ## Install
 
+The package is published to **GitHub Packages**. Tell npm where the
+`@hoodsim` scope lives (once), then install:
+
 ```bash
+# .npmrc (in your project or ~/.npmrc)
+echo "@hoodsim:registry=https://npm.pkg.github.com" >> .npmrc
+
 npm install @hoodsim/sdk viem
 ```
 
-`viem` is a peer dependency.
+`viem` is a peer dependency. Installing from GitHub Packages requires an npm
+login with a GitHub token that has `read:packages` (`npm login --registry=https://npm.pkg.github.com`).
 
 ## Quick start
 
